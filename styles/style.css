@@ -1,3 +1,4 @@
+/* General */
 body {
     color: #464646;
     font-family: 'Raleway', sans-serif;
@@ -5,6 +6,19 @@ body {
     background: #fcfcfc;
 }
 
+li {
+    display: inline;
+}
+
+section {
+    padding: 90px 70px;
+}
+
+section p {
+    line-height: 1.2rem;
+}
+
+/* Header */
 header {
     padding: 40px 70px;
 }
@@ -36,11 +50,7 @@ nav {
     padding-right: 5px;
 }
 
-li {
-    display: inline;
-}
-
-nav li {
+.menu-item {
     margin: 0 0 0 15px;
 }
 
@@ -95,14 +105,7 @@ nav li {
     height: 30%;
 }
 
-section {
-    padding: 90px 70px;
-}
-
-section p {
-    line-height: 1.2rem;
-}
-
+/* About */
 .about {
     background: #f2ecff;
 }
@@ -120,14 +123,37 @@ h2 {
     width: 6rem;
 }
 
+/* Education */
 .education {
     background: #f2ecff;
 }
 
+.education ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.education li {
+    display: inline-block;
+    text-align: center;
+}
+
+.education h3 {
+    font-weight: 800;
+}
+
+.education-logo {
+    margin: 40px auto 20px auto;
+    width: 50%;
+}
+
+/* Contact */
 .contact {
     background: #f2ecff;
 }
 
+/* Footer */
 footer {
     text-align: center;
 }
