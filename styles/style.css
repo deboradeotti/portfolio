@@ -162,6 +162,23 @@ nav {
     height: 60%;
 }
 
+/* Projects */ 
+.project {
+    margin: 40px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project-details {
+    width: 50%;
+    display: inline-block;
+    padding: 0 20px;
+}
+
+.project-screenshot {
+    width: 50%;
+}
 
 /* Contact */
 .contact {
