@@ -6,46 +6,60 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Débora Deotti</title>
+    <link rel="icon" href="assets/planeta-color.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles/reset.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
     <header>
         <nav>
+            <a class="name" href="index.html"><img class="planet-icon" src="assets/planeta.png">Débora Deotti</a>
             <ul>
-                <li>Sobre mim</li>
-                <li>Skills</li>
-                <li>Hobbies</li>
-                <li>Formação</li>
-                <li>Projetos</li>
-                <li>Contato</li>
+                <li><a class="menu-item" href="#sobre-mim">Sobre mim</a></li>
+                <li><a class="menu-item" href="#skills">Skills</a></li>
+                <li><a class="menu-item" href="#hobbies">Hobbies</a></li>
+                <li><a class="menu-item" href="#formacao">Formação</a></li>
+                <li><a class="menu-item" href="#projetos">Projetos</a></li>
+                <li><a class="menu-item" href="#contato">Contato</a></li>
             </ul>
         </nav>
 
         <div class="header-main">
-            <h1>Olá, meu nome é Débora Deotti e construo páginas web</h1>
-            <p>Eu sou graduanda em Engenharia Química pela Unicamp e desenvolvedora front-end. Atualmente estou participando no projeto Oracle ONE na Alura.</p>
+            <div class="header-main-text">
+                <h1>Olá! Meu nome é Débora e eu construo páginas web</h1>
+                <p>Sou graduanda em Engenharia Química pela Unicamp e desenvolvedora front-end. Atualmente estou participando do projeto Oracle ONE na Alura e estagiando em desenvolvimento de software.</p>
 
-            <ul>
-                <li>Github</li>
-                <li>Linkedin</li>
-                <li>Currículo</li>
-            </ul>
+                <ul>
+                    <li class="social">
+                        <a href="https://www.github.com/deboradeotti"><img class="social-icon" src="assets/github.png" alt="Ícone do Github">Github</a>
+                    </li>
+                    <li class="social">
+                        <a href="https://www.linkedin.com/in/deboradeotti/"><img class="social-icon" src="assets/linkedin.png" alt="Ícone do Linkedin">Linkedin</a>
+                    </li>
+                </ul>
+            </div>
 
-            <img src="debora-headphone.png" alt="Foto de perfil">
+            <img class="profile-picture" src="assets/debora-headphone.png" alt="Foto de perfil">
         </div>
     </header>
 
     <main>
 
-        <section class="about">
+        <section id="sobre-mim" class="about">
             <h2>Sobre mim</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.<br><br>
+            <div class="about-container">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.<br><br>
 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+            </div>
+            <img class="signature" src="assets/signature.png" alt="Assinatura">
         </section>
 
-        <section class="skills-and-hobbies">
+        <section id="skills" class="skills-and-hobbies">
             <div class="skills">
                 <h2>Skills</h2>
                 <ul>
@@ -56,7 +70,7 @@
                     <li>Ruby</li>
                 </ul>
             </div>
-            <div class="hobbies">
+            <div id="hobbies" class="hobbies">
                 <h2>Hobbies</h2>
                 <ul>
                     <li>Ler</li>
@@ -68,7 +82,7 @@
             </div>
         </section>
 
-        <section class="education">
+        <section id="formacao" class="education">
             <h2>Formação</h2>
             <ul>
                 <li>Engenharia Química</li>
@@ -76,11 +90,11 @@
             </ul>
         </section>
 
-        <section class="projects">
+        <section id="projetos" class="projects">
             <h2>Projetos</h2>
         </section>
 
-        <section class="contact">
+        <section id="contato" class="contact">
             <h2>Contato</h2>
             <p>Quer entrar em contato comigo?<br>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
         </section>
