@@ -101,7 +101,7 @@
                     <p>Projeto de clone da página de login do Instagram realizado para estudo, utilizando HTML e CSS, explorando flexbox e responsividade.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/deboradeotti/instagram-landing-page" target="_blank" class="repo-btn">Repositório</a>
-                        <a href="https://deboradeotti.github.io/instagram-landing-page/" target="_blank" class="demo-send-btn">Acessar demo</a>
+                        <a href="https://deboradeotti.github.io/instagram-landing-page/" target="_blank" class="demo-btn">Acessar demo</a>
                     </div>
                 </div>
             </div>
@@ -111,7 +111,7 @@
                     <p>Projeto de clone da página principal do Netflix realizado para estudo, utilizando HTML, CSS e o plugin jQuery Owl Carousel.</p>
                     <div class="project-buttons">
                         <a href="https://github.com/deboradeotti/netflix-clone" target="_blank" class="repo-btn">Repositório</a>
-                        <a href="https://deboradeotti.github.io/netflix-clone/" target="_blank" class="demo-send-btn">Acessar demo</a>
+                        <a href="https://deboradeotti.github.io/netflix-clone/" target="_blank" class="demo-btn">Acessar demo</a>
                     </div>
                 </div>
                 <img class="project-screenshot" src="assets/project-netflix.png" alt="Screenshot">
@@ -123,13 +123,19 @@
             <p>Quer entrar em contato comigo?<br>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
 
             <form>
-                <label for="name">Nome<input type="text" id="name" required></label>
+                <div class="full-input">
+                    <label for="name">Nome<input type="text" id="name" required></label>
+                </div>
+                
+                <div class="full-input">
+                    <label for="email">E-mail<input type="email" id="email" required></label>
+                </div>
 
-                <label for="email">E-mail<input type="email" id="email" class="input-padrao" required></label>
+                <div class="full-input">
+                    <label for="message">Mensagem<textarea id="message" cols="70" rows="10" required></textarea></label>
+                </div>
 
-                <label for="message">Mensagem<textarea id="message" cols="70" rows="10" required></textarea></label>
-
-                <input type="submit" value="Enviar mensagem" class="demo-send-btn">
+                <input type="submit" value="Enviar mensagem" class="send-btn">
             </form>
         </section>
 

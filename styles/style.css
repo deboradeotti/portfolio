@@ -201,7 +201,7 @@ nav {
     transition: 0.3s all;
 }
 
-.demo-send-btn {
+.demo-btn, .send-btn {
     background: #8465ce;
     color: #fff;
     cursor: pointer;
@@ -209,7 +209,7 @@ nav {
     font-size: 16px;
 }
 
-.demo-send-btn:hover {
+.demo-btn:hover, .send-btn:hover {
     background: #af98e4;
     transition: 0.5s all;
 }
@@ -220,14 +220,37 @@ nav {
     background: #f2ecff;
 }
 
+.full-input {
+    padding: 10px;
+    background: #fff;
+    border-radius: 5px;
+    width: 70%;
+    color: #A2A2A2;
+    margin: 10px 0;
+    border-bottom: 1px solid #A2A2A2;
+}
+
+.full-input:hover {
+    color: #8465ce;
+    border-bottom: 2px solid #8465ce;
+    transition: 0.5s all;
+}
+
 form input, textarea {
     display: block;
+    outline: none;
     border: none;
-    border-radius: 5px;
+    padding: 10px 0;
     color: #464646;
-    padding: 10px;
-    margin: 10px 0;
-    width: 70%;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+    resize: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.send-btn {
+    width: 72%;
 }
 
 /* Footer */
