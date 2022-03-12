@@ -180,6 +180,38 @@ nav {
     width: 50%;
 }
 
+.project-buttons a {
+    text-decoration: none;
+    border: 1px solid #8465ce;
+    border-radius: 5px;
+    padding: 10px;
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    margin: 5px 0;
+}
+
+.repo-btn {
+    background: transparent;
+    color: #8465ce;
+}
+
+.repo-btn:hover {
+    background: #dfd1ff;
+    transition: 0.3s all;
+}
+
+.demo-btn {
+    background: #8465ce;
+    color: #fff;
+}
+
+.demo-btn:hover {
+    background: #af98e4;
+    transition: 0.5s all;
+}
+
+
 /* Contact */
 .contact {
     background: #f2ecff;
