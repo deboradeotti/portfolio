@@ -6,6 +6,11 @@ body {
     background: #fcfcfc;
 }
 
+h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 li {
     display: inline;
 }
@@ -108,11 +113,6 @@ nav {
 /* About */
 .about {
     background: #f2ecff;
-}
-
-h2 {
-    font-size: 2rem;
-    font-weight: 700;
 }
 
 .about-container {
