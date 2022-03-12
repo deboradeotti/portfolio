@@ -11,6 +11,10 @@ h2 {
     font-weight: 700;
 }
 
+h3 {
+    font-weight: 800;
+}
+
 li {
     display: inline;
 }
@@ -123,30 +127,41 @@ nav {
     width: 6rem;
 }
 
-/* Education */
+/* Skills and Education */
 .education {
     background: #f2ecff;
 }
 
-.education ul {
+.education ul, .skills ul {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.education li {
+.education li, .skills li {
     display: inline-block;
     text-align: center;
-}
-
-.education h3 {
-    font-weight: 800;
 }
 
 .education-logo {
     margin: 40px auto 20px auto;
     width: 50%;
 }
+
+.skills li {
+    margin: 20px 40px;
+    width: 100px;
+    height: 100px;
+    border: 2px solid #A385E7;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.language-icon {
+    margin: 10px;
+    height: 60%;
+}
+
 
 /* Contact */
 .contact {
