@@ -201,12 +201,15 @@ nav {
     transition: 0.3s all;
 }
 
-.demo-btn {
+.demo-send-btn {
     background: #8465ce;
     color: #fff;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
 }
 
-.demo-btn:hover {
+.demo-send-btn:hover {
     background: #af98e4;
     transition: 0.5s all;
 }
@@ -215,6 +218,16 @@ nav {
 /* Contact */
 .contact {
     background: #f2ecff;
+}
+
+form input, textarea {
+    display: block;
+    border: none;
+    border-radius: 5px;
+    color: #464646;
+    padding: 10px;
+    margin: 10px 0;
+    width: 70%;
 }
 
 /* Footer */
