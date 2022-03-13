@@ -123,6 +123,14 @@ nav {
     max-width: 46rem;
 }
 
+strong {
+    font-weight: 700;
+}
+
+.signature {
+    width: 5em;
+}
+
 /* Skills and Education */
 .education {
     background: #f2ecff;
