@@ -152,14 +152,16 @@ strong {
     width: 50%;
 }
 
+
 .skills li {
-    margin: 20px 40px;
-    width: 100px;
-    height: 100px;
+    margin: 2%;
+    width: 8%;
+    height: 8%;
     border: 2px solid #A385E7;
     border-radius: 10px;
     padding: 20px;
 }
+
 
 .language-icon {
     margin: 10px;
@@ -260,4 +262,41 @@ form input, textarea {
 /* Footer */
 footer {
     text-align: center;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 480px) {
+
+    html {
+        font-size: 12px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    .header-main, .skills ul, .education ul {
+        flex-direction: column;
+    }
+
+    .profile-picture {
+        order: -1;
+        width: 50%;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    .skills li {
+        margin: 5%;
+        width: 30%;
+    }
+
 }
