@@ -1,0 +1,25 @@
+.about {
+    background: #f2ecff;
+}
+
+.about__container {
+    max-width: 46rem;
+}
+
+.about__text {
+    padding: 20px 0;
+}
+
+.about__text--link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about__text--link:hover {
+    text-decoration: underline;
+    transition: 0.5s all;
+}
+
+.about__signature {
+    width: 5rem;
+}

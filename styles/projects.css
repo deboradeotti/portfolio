@@ -1,0 +1,101 @@
+.project {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto;
+}
+
+.project__details {
+    display: inline-block;
+    padding: 0 20px;
+    width: 50%;
+}
+
+.project__details--title, .project__details--description {
+    padding-bottom: 10px;
+}
+
+.project__screenshot {
+    width: 50%;
+}
+
+.project__buttons--repo, .project__buttons--demo {
+    border: 1px solid #8465ce;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 5px 0;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 120px;
+}
+
+.project__buttons--repo {
+    background: transparent;
+    color: #8465ce;
+}
+
+.project__buttons--repo:hover {
+    background: #dfd1ff;
+    transition: 0.3s all;
+}
+
+.project__buttons--demo {
+    background: #8465ce;
+    color: #fff;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+.project__buttons--demo:hover {
+    background: #af98e4;
+    transition: 0.5s all;
+}
+
+/*
+    TABLET
+*/
+
+@media screen and (max-width: 1023px) {
+
+    .project {
+        flex-direction: column;
+    }
+
+    .project:last-child {
+        margin-bottom: 0;
+    }
+
+    .project__screenshot {
+        width: 100%;
+    }
+    
+    .project__details {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .project__buttons--repo, .project__buttons--demo {
+        font-size: 1rem;
+    }
+}
+
+/*
+    MOBILE
+*/
+
+@media screen and (max-width: 480px) {
+
+    .project__buttons {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .project__buttons--repo, .project__buttons--demo {
+        font-size: 1rem;
+        width: 40%;
+    }
+
+}

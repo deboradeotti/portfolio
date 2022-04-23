@@ -1,0 +1,166 @@
+.header {
+    padding: 40px 70px;
+}
+
+.header__menu {
+    background: #fcfcfc;
+    display: flex;
+    justify-content: space-between;
+    left: 0;
+    padding: 30px 70px 20px 70px;
+    position: fixed;
+    right: 0;
+    top: 0;
+}
+
+.header__menu--name {
+    color: #464646;
+    cursor: pointer;
+    font-weight: 700;
+    margin: 0;
+    text-decoration: none;
+}
+
+.header__menu--planet-icon {
+    padding-right: 5px;
+    width: 1rem;
+}
+
+.header__menu--item {
+    color: #464646;
+    margin: 0 0 0 15px;
+    text-decoration: none;
+}
+
+.header__menu--list li:last-child {
+    font-weight: 700;
+}
+
+.header__menu--item:hover {
+    color: lightgray;
+    transition: 0.5s all;
+}
+
+.header__main {
+    display: flex;
+    padding-top: 90px;
+}
+
+.header__main---title {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.header__main--text {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.header__main--text, .header__main---title{
+    margin: 1.2rem 0;
+}
+
+.header__main--list-item {
+    display: inline;
+    font-weight: 500;
+    margin-right: 15px;
+}
+
+.header__main--list-link {
+    align-items: center;
+    color: #464646;
+    display: inline-flex;
+    text-decoration: none;
+}
+
+.header__main--list-link:hover {
+    text-decoration: underline;
+}
+
+.header__main--list-icon {
+    padding-right: 5px;
+    width: 1.1rem;
+}
+
+.header__main--picture {
+    border-radius: 100%;
+    height: 30%;
+    padding-left: 20px;
+    width: 30%;
+}
+
+/*
+    TABLET
+*/
+
+@media screen and (max-width: 1023px) {
+
+    .header {
+        padding: 40px 50px;
+    }
+
+    .header__menu {
+        padding: 30px 50px 20px 50px;
+    }
+
+    .header__menu--name, .header__menu--item {
+        font-size: 1rem;
+    }
+
+    .header__menu--list li:not(:last-child) {
+        display: none;
+    }
+
+    .header__main {
+        padding-top: 50px;
+    }
+
+    .header__main---title {
+        font-size: 2rem;
+    }
+
+    .header__main--text, .header__main--list-item {
+        font-size: 1.1rem;
+    }
+
+}
+
+/*
+    MOBILE
+*/
+
+@media screen and (max-width: 550px) {
+
+    .header {
+        padding: 40px 20px;
+    }
+
+    .header__menu {
+        padding: 30px 20px 20px 20px;
+    }
+
+    .header__menu--list li:last-child {
+        font-weight: 400;
+        font-size: 0.9rem;
+    }
+
+    .header__main {
+        flex-direction: column-reverse;
+    }
+
+    .header__main--picture {
+        border-radius: 100%;
+        height: 40%;
+        padding-left: 0;
+        width: 40%;
+    }
+    
+    .header__main---title {
+        font-size: 1.5rem;
+    }
+
+    .header__main--text, .header__main--list-item {
+        font-size: 1rem;
+    }
+    
+}

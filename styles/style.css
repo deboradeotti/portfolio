@@ -1,9 +1,12 @@
-/* General */
 body {
     color: #464646;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
     background: #fcfcfc;
+}
+
+p {
+    font-size: 1rem;
 }
 
 h2 {
@@ -12,7 +15,8 @@ h2 {
 }
 
 h3 {
-    font-weight: 800;
+    font-size: 1rem;
+    font-weight: 700;
 }
 
 li {
@@ -27,276 +31,42 @@ section p {
     line-height: 1.2rem;
 }
 
-/* Header */
-header {
-    padding: 40px 70px;
-}
-
-header a {
-    color: #464646;
-    text-decoration: none;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 30px 70px 20px 70px;
-    background: #fcfcfc;
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-}
-
-.name {
-    font-weight: bold;
-    margin: 0;
-    cursor: pointer;
-}
-
-.planet-icon {
-    width: 1rem;
-    padding-right: 5px;
-}
-
-.menu-item {
-    margin: 0 0 0 15px;
-}
-
-.menu-item:hover {
-    color: lightgray;
-    transition: 0.5s all;
-}
-
-.header-main {
-    padding-top: 90px;
-    display: flex;
-}
-
-.header-main-text h1 {
-    font-weight: 700;
-    font-size: 3rem;
-}
-
-.header-main-text p {
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-}
-
-.header-main-text h1, p {
-    margin: 1.2rem 0;
-}
-
-.header-main-text li {
-    font-weight: 500;
-    display: inline;
-    margin-right: 15px;
-    color: #464646;
-}
-
-.header-main-text a:hover {
-    text-decoration: underline;
-}
-
-.social a {
-    display: inline-flex;
-    align-items: center;
-}
-
-.social-icon {
-    width: 1.1rem;
-    padding-right: 5px;
-}
-
-.profile-picture {
-    border-radius: 100%;
-    width: 30%;
-    height: 30%;
-}
-
-/* About */
-.about {
-    background: #f2ecff;
-}
-
-.about-container {
-    max-width: 46rem;
-}
-
 strong {
     font-weight: 700;
 }
 
-.signature {
-    width: 5em;
+/*
+    TABLET
+*/
+
+@media screen and (max-width: 1024px) {
+
+    :root {
+        font-size: 14px;
+    }
+
+    section {
+        padding: 50px;
+    }
+    
 }
 
-/* Skills and Education */
-.education {
-    background: #f2ecff;
-}
-
-.education ul, .skills ul {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.education li, .skills li {
-    display: inline-block;
-    text-align: center;
-}
-
-.education-logo {
-    margin: 40px auto 20px auto;
-    width: 50%;
-}
-
-
-.skills li {
-    margin: 2%;
-    width: 8%;
-    height: 8%;
-    border: 2px solid #A385E7;
-    border-radius: 10px;
-    padding: 20px;
-}
-
-
-.language-icon {
-    margin: 10px;
-    height: 60%;
-}
-
-/* Projects */ 
-.project {
-    margin: 40px auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.project-details {
-    width: 50%;
-    display: inline-block;
-    padding: 0 20px;
-}
-
-.project-screenshot {
-    width: 50%;
-}
-
-.project-buttons a {
-    text-decoration: none;
-    border: 1px solid #8465ce;
-    border-radius: 5px;
-    padding: 10px;
-    display: inline-block;
-    width: 120px;
-    text-align: center;
-    margin: 5px 0;
-}
-
-.repo-btn {
-    background: transparent;
-    color: #8465ce;
-}
-
-.repo-btn:hover {
-    background: #dfd1ff;
-    transition: 0.3s all;
-}
-
-.demo-btn, .send-btn {
-    background: #8465ce;
-    color: #fff;
-    cursor: pointer;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-}
-
-.demo-btn:hover, .send-btn:hover {
-    background: #af98e4;
-    transition: 0.5s all;
-}
-
-
-/* Contact */
-.contact {
-    background: #f2ecff;
-}
-
-.full-input {
-    padding: 10px;
-    background: #fff;
-    border-radius: 5px;
-    width: 70%;
-    color: #A2A2A2;
-    margin: 10px 0;
-    border-bottom: 1px solid #A2A2A2;
-}
-
-.full-input:hover {
-    color: #8465ce;
-    border-bottom: 2px solid #8465ce;
-    transition: 0.5s all;
-}
-
-form input, textarea {
-    display: block;
-    outline: none;
-    border: none;
-    padding: 10px 0;
-    color: #464646;
-    font-family: 'Raleway', sans-serif;
-    font-size: 16px;
-    resize: none;
-    border-radius: 5px;
-    width: 100%;
-}
-
-.send-btn {
-    width: 72%;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-}
-
-/* Mobile */
+/* 
+    MOBILE
+*/
 
 @media screen and (max-width: 480px) {
 
-    html {
+    :root {
         font-size: 12px;
     }
 
-    nav {
-        display: block;
-        text-align: center;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    .header-main, .skills ul, .education ul {
-        flex-direction: column;
-    }
-
-    .profile-picture {
-        order: -1;
-        width: 50%;
+    section {
+        padding: 20px;
     }
 
     h2 {
+        font-size: 1.5rem;
         text-align: center;
     }
-
-    .skills li {
-        margin: 5%;
-        width: 30%;
-    }
-
 }

@@ -9,40 +9,51 @@
     <link rel="icon" href="assets/planeta-color.png" type="image/x-icon">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/about.css">
+    <link rel="stylesheet" href="styles/skills.css">
+    <link rel="stylesheet" href="styles/education.css">
+    <link rel="stylesheet" href="styles/projects.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="stylesheet" href="styles/footer.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <a class="name" href="index.html"><img class="planet-icon" src="assets/planeta.png">Débora Deotti</a>
-            <ul>
-                <li><a class="menu-item" href="#sobre-mim">Sobre mim</a></li>
-                <li><a class="menu-item" href="#skills">Skills</a></li>
-                <li><a class="menu-item" href="#formacao">Formação</a></li>
-                <li><a class="menu-item" href="#projetos">Projetos</a></li>
-                <li><a class="menu-item" href="#contato">Contato</a></li>
+    <header class="header">
+        <nav class="header__menu">
+            <a class="header__menu--name" href="index.html"><img class="header__menu--planet-icon" src="assets/planeta.png">Débora Deotti</a>
+            <ul class="header__menu--list">
+                <li><a class="header__menu--item" href="#sobre-mim">Sobre mim</a></li>
+                <li><a class="header__menu--item" href="#skills">Skills</a></li>
+                <li><a class="header__menu--item" href="#formacao">Formação</a></li>
+                <li><a class="header__menu--item" href="#projetos">Projetos</a></li>
+                <li><a class="header__menu--item" href="mailto:debora.deotti@gmail.com">debora.deotti@gmail.com</a></li>
             </ul>
         </nav>
 
-        <div class="header-main">
-            <div class="header-main-text">
-                <h1>Olá! Meu nome é Débora e eu construo páginas web</h1>
-                <p>Sou graduanda em Engenharia Química pela Unicamp e desenvolvedora front-end. Atualmente estou participando do projeto Oracle ONE na Alura e estagiando em desenvolvimento de software.</p>
+        <div class="header__main">
+            <div class="header__main--content">
+                <h1 class="header__main---title">Olá! Meu nome é Débora e eu construo páginas web</h1>
+                <p class="header__main--text">Sou graduanda em Engenharia Química pela Unicamp e desenvolvedora front-end. Atualmente, estou estagiando em desenvolvimento de software.</p>
 
-                <ul>
-                    <li class="social">
-                        <a href="https://www.github.com/deboradeotti" target="_blank"><img class="social-icon" src="assets/github.png" alt="Ícone do Github">Github</a>
+                <ul class="header__main--list">
+                    <li class="header__main--list-item">
+                        <a class="header__main--list-link" href="https://www.github.com/deboradeotti" target="_blank">
+                            <img class="header__main--list-icon" src="assets/github.png" alt="Ícone do Github">Github
+                        </a>
                     </li>
-                    <li class="social">
-                        <a href="https://www.linkedin.com/in/deboradeotti/" target="_blank"><img class="social-icon" src="assets/linkedin.png" alt="Ícone do Linkedin">Linkedin</a>
+                    <li class="header__main--list-item">
+                        <a class="header__main--list-link" href="https://www.linkedin.com/in/deboradeotti/" target="_blank">
+                            <img class="header__main--list-icon" src="assets/linkedin.png" alt="Ícone do Linkedin">Linkedin
+                        </a>
                     </li>
                 </ul>
             </div>
 
-            <img class="profile-picture" src="assets/debora-headphone.png" alt="Foto de perfil">
+            <img class="header__main--picture" src="assets/debora-headphone.png" alt="Foto de perfil">
         </div>
     </header>
 
@@ -50,35 +61,32 @@
 
         <section id="sobre-mim" class="about">
             <h2>Sobre mim</h2>
-            <div class="about-container">
-                <p>
-                    Nasci em 1998, então praticamente não me lembro de uma época sem a internet. 
-                    Sempre fui a criança que sentava na frente do único computador da casa e passava horas "brincando" com os softwares instalados e explorando a web.
+            <div class="about__container">
+                <p class="about__text">
+                    Entrei na Faculdade de Engenharia Química da Unicamp em 2018. Quando tive uma disciplina de introdução a algoritmos e lógica de programação, porém, foi amor à primeira vista. Posso dizer com toda a certeza que aprender a programar mudou minha vida. A partir dali, comecei a estudar por conta própria, em paralelo com a faculdade, e não parei mais.
                     <br><br>
-                    Entrei na Faculdade de Engenharia Química da Unicamp em 2018, movida pela minha curiosidade e fascinação pela ciência. Quando tive uma disciplina de introdução a algoritmos e lógica de programação, porém, foi amor à primeira vista. Posso dizer com toda a certeza que aprender a programar mudou minha vida. A partir dali, comecei a estudar por conta própria, em paralelo com a faculdade, e não parei mais.
-                    <br><br>
-                    Atualmente, faço estágio em desenvolvimento de software, onde atuo como desenvolvedora front-end. Enquanto isso, também me dedico a estudar novas tecnologias e me desafiar em outras áreas dentro desse universo que amo tanto.
+                    Atualmente, faço estágio em desenvolvimento de software na <a class="about__text--link" href="https://www.sallve.com.br" target="_blank">Sallve</a>, onde atuo no front-end do time de e-commerce. Enquanto isso, também me dedico a estudar novas tecnologias e me desafiar em outras áreas dentro desse universo que amo tanto.
                     <br><br>
                     Sou vegetariana, apaixonada por música, literatura e toda forma de arte.
                     Aqui, você encontra alguns dos meus projetos desenvolvidos para estudo, e um pouquinho de mim em cada um deles. <strong>:)</strong>
                 </p>
-                <img class="signature" src="assets/signature.png" alt="Assinatura">
+                <img class="about__signature" src="assets/signature.png" alt="Assinatura">
             </div>
         </section>
 
         <section id="skills" class="skills">
             <h2>Skills</h2>
-            <ul>
-                <li>
-                    <img class="language-icon" src="assets/html.svg" alt="Html icon">
+            <ul  class="skills__list">
+                <li class="skills__list-item">
+                    <img class="skills__language-icon" src="assets/html.svg" alt="Html icon">
                     <h3>HTML</h3>
                 </li>
-                <li>
-                    <img class="language-icon" src="assets/javascript.svg" alt="JavaScript icon">
+                <li class="skills__list-item">
+                    <img class="skills__language-icon" src="assets/javascript.svg" alt="JavaScript icon">
                     <h3>JavaScript</h3>
                 </li>
-                <li>
-                    <img class="language-icon" src="assets/css.svg" alt="CSS icon">
+                <li class="skills__list-item">
+                    <img class="skills__language-icon" src="assets/css.svg" alt="CSS icon">
                     <h3>CSS</h3>
                 </li>
             </ul>
@@ -86,15 +94,15 @@
 
         <section id="formacao" class="education">
             <h2>Formação</h2>
-            <ul>
-                <li>
-                    <img class="education-logo" src="assets/unicamp-pb.svg" alt="Logo da Unicamp">
-                    <h3>Engenharia Química</h3>
+            <ul class="education__list">
+                <li class="education__list-item">
+                    <img class="education__list-item--logo" src="assets/unicamp-pb.svg" alt="Logo da Unicamp">
+                    <h3 class="education__list-item--title">Engenharia Química</h3>
                     <p>2018 - 2024 | Unicamp</p>
                 </li>
-                <li>
-                    <img class="education-logo" src="assets/alura.svg" alt="Logo da Alura">
-                    <h3>Formação Oracle ONE</h3>
+                <li class="education__list-item">
+                    <img class="education__list-item--logo" src="assets/alura.svg" alt="Logo da Alura">
+                    <h3 class="education__list-item--title">Formação Front-end</h3>
                     <p>2022 | Alura</p>
                 </li>
             </ul>
@@ -103,48 +111,48 @@
         <section id="projetos" class="projects">
             <h2>Projetos</h2>
             <div class="project">
-                <img class="project-screenshot" src="assets/project-instagram.png" alt="Screenshot">
-                <div class="project-details">
-                    <h3>Instagram Landing Page</h3>
-                    <p>Projeto de clone da página de login do Instagram realizado para estudo, utilizando HTML e CSS, explorando flexbox e responsividade.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/deboradeotti/instagram-landing-page" target="_blank" class="repo-btn">Repositório</a>
-                        <a href="https://deboradeotti.github.io/instagram-landing-page/" target="_blank" class="demo-btn">Acessar demo</a>
+                <img class="project__screenshot" src="assets/project-instagram.png" alt="Screenshot">
+                <div class="project__details">
+                    <h3 class="project__details--title">Instagram Landing Page</h3>
+                    <p class="project__details--description">Projeto de clone da página de login do Instagram realizado para estudo, utilizando HTML e CSS, explorando flexbox e responsividade.</p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/deboradeotti/instagram-landing-page" target="_blank" class="project__buttons--repo">Repositório</a>
+                        <a href="https://deboradeotti.github.io/instagram-landing-page/" target="_blank" class="project__buttons--demo">Acessar demo</a>
                     </div>
                 </div>
             </div>
             <div class="project">
-                <div class="project-details">
-                    <h3>Netflix Clone</h3>
-                    <p>Projeto de clone da página principal do Netflix realizado para estudo, utilizando HTML, CSS e o plugin jQuery Owl Carousel.</p>
-                    <div class="project-buttons">
-                        <a href="https://github.com/deboradeotti/netflix-clone" target="_blank" class="repo-btn">Repositório</a>
-                        <a href="https://deboradeotti.github.io/netflix-clone/" target="_blank" class="demo-btn">Acessar demo</a>
+                <img class="project__screenshot" src="assets/project-netflix.png" alt="Screenshot">
+                <div class="project__details">
+                    <h3 class="project__details--title">Netflix Clone</h3>
+                    <p class="project__details--description">Projeto de clone da página principal do Netflix realizado para estudo, utilizando HTML, CSS e o plugin jQuery Owl Carousel.</p>
+                    <div class="project__buttons">
+                        <a href="https://github.com/deboradeotti/netflix-clone" target="_blank" class="project__buttons--repo">Repositório</a>
+                        <a href="https://deboradeotti.github.io/netflix-clone/" target="_blank" class="project__buttons--demo">Acessar demo</a>
                     </div>
                 </div>
-                <img class="project-screenshot" src="assets/project-netflix.png" alt="Screenshot">
             </div>
         </section>
 
         <section id="contato" class="contact">
-            <h2>Contato</h2>
-            <p>Quer entrar em contato comigo?<br>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
-
-            <form>
-                <div class="full-input">
-                    <label for="name">Nome<input type="text" id="name" required></label>
-                </div>
-                
-                <div class="full-input">
-                    <label for="email">E-mail<input type="email" id="email" required></label>
-                </div>
-
-                <div class="full-input">
-                    <label for="message">Mensagem<textarea id="message" cols="70" rows="10" required></textarea></label>
-                </div>
-
-                <input type="submit" value="Enviar mensagem" class="send-btn">
-            </form>
+            <img src="./assets/telephone.jpg" alt="Imagem de um telefone" class="contact__image">
+            <div class="contact__wrapper">
+                <h2 class="contact__title">Contato</h2>
+                <p class="contact__text">Quer entrar em contato comigo?<br>Preencha o formulário abaixo e entrarei em contato o mais rápido possível.</p>
+    
+                <form class="contact__form">
+                    <div class="contact__form--input">
+                        <label for="name">Nome<input class="contact__form--input-inner" type="text" id="name" required></label>
+                    </div>
+                    <div class="contact__form--input">
+                        <label for="email">E-mail<input class="contact__form--input-inner" type="email" id="email" required></label>
+                    </div>
+                    <div class="contact__form--input">
+                        <label for="message">Mensagem<textarea class="contact__form--input-inner" id="message" rows="7" required></textarea></label>
+                    </div>
+                    <input type="submit" value="Enviar mensagem" class="contact__form--send-button">
+                </form>
+            </div>
         </section>
 
     </main>

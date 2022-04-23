@@ -1,0 +1,52 @@
+.education {
+    background: #f2ecff;
+}
+
+.education__list {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.education__list-item {
+    display: inline-block;
+    text-align: center;
+}
+
+.education__list-item--title {
+    padding-bottom: 10px;
+}
+
+.education__list-item--logo {
+    margin: 40px auto 20px auto;
+    width: 50%;
+}
+
+/*
+    TABLET
+*/
+
+@media screen and (max-width: 1023px) {
+
+    .education__list-item--logo {
+        width: 30%;
+    }
+    
+}
+
+/*
+    MOBILE
+*/
+
+@media screen and (max-width: 480px) {
+
+    .education__list {
+        flex-direction: column;
+    }
+
+    .education__list-item:last-child .education__list-item--logo{
+        margin-top: 20px;
+        margin-bottom: 0;
+    }
+
+}
